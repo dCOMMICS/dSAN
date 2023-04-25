@@ -1,104 +1,35 @@
-<!--
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="sanwu.css">
+    <!-- greensock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <title>San Wu Studio's</title>
 </head>
 <body>
     
-    HTML LINKS -->
-      <!--Everthing is working
+ <!--HTML LINKS -->
+      <!--Everthing is working-->
     <a href="home.html" target="_self">Home</a>
     <a href="about.html" target="_self">About</a>
     <a href="projects.html" target="_self">Projects</a>
--->
-    <!--start adding codes from here
+
+    <!--start adding codes from here-->
     <div class="homepage">
     <h1>Hello, </h1>
     <h2>I am Craig</h2>
-    <p></p>
+    <p>a Software Engineer & Indie game developer.</p>
     </div>
--->
-<!--jAVASCRIPT LINKS
+
+<!--jAVASCRIPT LINKS-->
 <script src="sanwu.js"></script>
-</body>
-</html>
--->
-
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Craig Dallurs |</title>
-    <meta name="author" content="sanwu">
-
-    <!-- stylesheet -->
-    <link rel="stylesheet" href="sanwu.css" />
-
-    <!-- greensock -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-</head>
-
-<body class="home">
-    <div class="wrapper">
-
-        <!-- menu -->
-        <nav class="menu">
-            <div class="menu__logo">
-                <a href="home.html">cd</a>
-            </div>
-            <div class="menu__items">
-                <div class="menu__items-link active"><a href="home.html">Projects</a></div>
-                <div class="menu__items-link"><a href="about.html">About</a></div>
-            </div>
-        </nav>
-
-        <!-- horizontal scroll items -->
-        <div class="container">
-            <div class="container__item container__item-header">
-                <h1>Craig Dallurs, <br> Software Engineer</h1>
-            </div>
-
-            <div class="container__item container__item-1">
-                <h1 class="container__item-title">
-                    <a href="projects.html">Asterisks</a>
-                </h1>
-            </div>
-            <div class="container__item container__item-2">
-                <h1 class="container__item-title">
-                    <a href="projects.html">Unlocked</a>
-                </h1>
-            </div>
-            <div class="container__item container__item-3">
-                <h1 class="container__item-title">
-                    <a href="projects.html">Offbeat</a>
-                </h1>
-            </div>
-            <div class="container__item container__item-4">
-                <h1 class="container__item-title">
-                    <a href="projects.html">Brutal</a>
-                </h1>
-            </div>
-            <div class="container__item container__item-5">
-                <h1 class="container__item-title">
-                    <a href="projects.html">Mouthwash</a>
-                </h1>
-            </div>
-        </div>
-
-    </div>
-
-    <!-- script -->
-    <script src="sanwu.js"></script>
-    <script>
-        var blocks = document.getElementsByClassName("container__item");
+<script>
+    var blocks = document.getElementsByClassName("container__item");
         var container = document.getElementsByClassName("container");
         var hs = new HorizontalScroll.default({
             blocks: blocks,
@@ -106,7 +37,9 @@
             isAnimated: true,
             springEffect: 0.8,
         });
-    </script>
+</script>
 </body>
-
 </html>
+
+
+
