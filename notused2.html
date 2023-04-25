@@ -1,35 +1,56 @@
- 
- <!DOCTYPE html>
+
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="sanwu.css">
+    <title>About Kurt Craig Dallurs | Portfolio by Craig</title>
+    <meta name="author" content="sanwurld@gmail.com">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="sanwu.css" />
+
     <!-- greensock -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+
     <!-- locomotive-scroll -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.2.5/dist/locomotive-scroll.min.css">
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.2.5/dist/locomotive-scroll.min.js"></script>
-    <title>About Me</title>
 </head>
-<body>
-    
-  <!--  HTML LINKS--> 
-      <!--Everthing is working -->
-    <a href="home.html" target="_self">Home</a>
-    <a href="about.html" target="_self">About</a>
-    <a href="projects.html" target="_self">Projects</a>
- 
-    <!--start adding codes from here -->
-    <h1>About Me</h1>
-    <p>A Software Engineer interested in design systems and closing the gap between design and development</p>
-   
-    <!--jAVASCRIPT LINK-->
+
+<body id="js-scroll">
+    <div class="wrapper">
+
+        <!-- menu -->
+        <nav class="menu">
+            <div class="menu__logo">
+                <a href="index.html">cd</a>
+            </div>
+            <div class="menu__items">
+                <div class="menu__items-link"><a href="projects.html">Projects</a></div>
+                <div class="menu__items-link active"><a href="about.html">About</a></div>
+            </div>
+        </nav>
+
+        <!-- about-section -->
+        <div class="about__container" data-scroll-section>
+            <p class="about__container-data" data-scroll>Hi! My name is <span>Craig</span> and I'm a Software Engineer and
+                designer, born in <span>Paris,</span> France.</p>
+
+            <p data-scroll>If you have any questions or would like to have a chat, don't hesitate to <span
+                    class=""><a href="" target="_blank">get
+                        in touch.</a></span></p>
+
+            
+        </div>
+
+        <div class="cursor-follow"></div>
+    </div>
     <script src="sanwu.js"></script>
     <script>
-          // smooth scroll 
-          const scroll = new LocomotiveScroll({
+        // smooth scroll 
+        const scroll = new LocomotiveScroll({
             el: document.querySelector('#js-scroll'),
             smooth: true,
             smoothMobile: true,
@@ -70,5 +91,5 @@
         });
     </script>
 </body>
-</html>
 
+</html>
